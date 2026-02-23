@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "567120658052",
+    "firebase_url": "https://techlead-57814-default-rtdb.firebaseio.com",
+    "project_id": "techlead-57814",
+    "storage_bucket": "techlead-57814.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567120658052:android:7234e24263faed6c4accd1",
+        "android_client_info": {
+          "package_name": "com.example.techlead"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY9cBheiZJ20h1TslV4pVi4eUiwsxS3_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

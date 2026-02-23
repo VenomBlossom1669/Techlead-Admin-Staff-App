@@ -1,0 +1,11 @@
+[33mcommit dc0a3887687d23b53c1ab858432e76d5febfbeb3[m
+Author: DhruvPrajapati21 <chetanbhai.dhruv@gmail.com>
+Date:   Mon Jun 23 12:47:22 2025 +0530
+
+    Remove service account key
+
+[33mcommit df07f9c8cc90eb0b98dde61873936555fd34db4f[m
+Author: DhruvPrajapati21 <chetanbhai.dhruv@gmail.com>
+Date:   Mon Jun 23 12:43:45 2025 +0530
+
+    📦 Project restructure and refactor: folders organized, login logic updated

@@ -1,0 +1,75 @@
+{
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "echo \"Skipping lint check\""
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|css|wasm|png|jpg|jpeg|gif|svg|ico|json)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          }
+        ]
+      },
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          }
+        ]
+      }
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "techlead-57814",
+          "appId": "1:567120658052:android:7234e24263faed6c4accd1",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "techlead-57814",
+          "configurations": {
+            "android": "1:567120658052:android:7234e24263faed6c4accd1",
+            "ios": "1:567120658052:ios:6cfb2441db8e85fe4accd1",
+            "macos": "1:567120658052:ios:6cfb2441db8e85fe4accd1",
+            "web": "1:567120658052:web:02bd3fe1e81fd9784accd1",
+            "windows": "1:567120658052:web:5a2ee490aa1406214accd1"
+          }
+        }
+      }
+    }
+  }
+}
